@@ -13,7 +13,17 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
-  
+
+  // variable declaration
+  int n,x,sum = 0;
+  // taking user inputs
+  printf("Enter the number you want the sum upto: ");
+  scanf("%d",&n);
+  // loop for the condition
+  for ( x = 0; x < n; x++ )
+    sum = sum + (x+1);
+  // prints the sum
+  printf("sum = %d",sum );
   return 0;
 }
 
